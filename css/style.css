@@ -128,5 +128,78 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-@media screen and (min-width: 480px)
-    {}
+
+ @media screen and (max-width: 768px) {
+     .container {
+         width: 100%;
+         display: block;
+     }
+
+     .card { 
+        display: block;
+        width: 100%;            
+     }
+
+     .col {
+        width: 100%;
+        display: block;
+     }
+}
+
+ @media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        display: block;
+    }
+
+    .row { 
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+
+    .card { 
+       display: block;
+       width: 100%;
+       margin: 0 auto;          
+    }
+
+    .col {
+       width: 100%;
+       display: block;
+    }
+
+    .why-us .col-left { 
+        width: 100%;
+    }
+
+    .why-us .col-right { 
+        width: 100%;
+    }
+}
+
+/****************************
+ELEMENTI CON UNA WIDTH
+****************************/
+/* LAYOUT */
+container
+    width: 1140px;
+
+row 
+    display: flex; /*wrap? block? */
+
+/* LESSONS SECTION */
+lessons col
+    width: 50%
+
+steps col 
+    width: calc(100% / 3)
+
+why-us col-left 
+    width: 40%
+
+why-us col-right
+    width: 60%
+
